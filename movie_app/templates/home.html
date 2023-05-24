@@ -1,0 +1,348 @@
+{% extends 'sidebar.html' %}
+{% load static %}
+
+{% block title %}
+MovieFlix-Home
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid" style="background-color: rgb(19, 19, 19);height: 50px;">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 w-100" type="search" placeholder="Movies, shows and more" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+
+        </div>
+        <div class="col-lg-4"></div> 
+    </div>
+      
+</div><br>
+
+
+<section id="section0">
+
+
+    <div class="container-fluid">
+
+        {% include 'carousel.html' %}
+
+       
+
+    </div>
+
+
+
+</section><br>
+
+
+
+
+<section id="section1">
+  <div class="row">
+    <div class="col-lg-12">
+        <h5 class="text-white">Latest & Trending</h5>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/thumb.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/thumb.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/thumb.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/thumb.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <center><button class="btn btn-outline-danger" style="margin-bottom: 20px;margin-top: 20px;" type="submit">View All</button></center> 
+  </div>   
+    
+</section><br>
+
+<section id="section2">
+  <div class="row">
+    <div class="col-lg-12">
+        <h5 class="text-white">Top Movies</h5>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/leo.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/leo.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/leo.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/leo.jpg' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+    <center><button class="btn btn-outline-danger" style="margin-bottom: 20px;margin-top: 20px;" type="submit">View All</button></center> 
+
+      
+  </div>   
+
+</section><br>
+
+<section id="section3">
+  <div class="row">
+    <div class="col-lg-12">
+        <h5 class="text-white">Top Series</h5>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/shows1.webp' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/shows1.webp' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/shows1.webp' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-2">
+      <div class="card movie-card">
+        <img src="{% static 'images/shows1.webp' %}" alt="Movie Poster">
+        <div class="card-body movie-details">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+        </div>
+      </div>
+    </div>
+
+    <center><button class="btn btn-outline-danger" style="margin-bottom: 20px;margin-top: 20px;" type="submit">View All</button></center> 
+  
+  </div>   
+
+</section><br>
+
+<section id="sectionlast">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Company</h5>
+        <ul>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">About Us</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Contact Us</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Privacy Policy</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Terms & Condition</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Quick Links</h5>
+        <ul>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Home</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">My Space</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Movies</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;">Series</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="/" style="color: rgb(255, 255, 255);text-decoration: none;">logout</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Contact</h5>
+        <ul>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-geo m-2"></i>Banglore</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-telephone m-2"></i>0481-6450232</a></li>
+          <li style="color: rgb(255, 255, 255);"><a href="#" style="color: rgb(255, 255, 255);text-decoration: none;"><i class="bi bi-instagram m-2"></i><i class="bi bi-facebook m-2"></i><i class="bi bi-twitter m-2"></i><i class="bi bi-linkedin m-2"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(255, 255, 255);margin-top: 50px;">Connect with Us</h5>
+       
+        <p style="color: rgb(255, 255, 255);"><p style="color: rgb(255, 255, 255);text-decoration: none;">Subscribe our email for new <br>Releases and top Movies </p></p>
+        <p style="color: rgb(255, 255, 255);">
+          <nav class="navbar">
+            <div class="container-fluid" style="background: transparent;">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit">Subscribe</button>
+              </form>
+            </div>
+            
+          </nav>
+        </p>
+               
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="card-footer" style="height: 45px; background-color: rgb(19, 19, 19);">
+  <p class="text-white text-center"><i class="bi bi-info-circle"></i>MovieFlix.com | All rights reserved | movieflix@gmail.com</p>
+</div>
+
+
+
+
+
+
+<style>
+    .movie-card {
+      position: relative;
+      width: 200px;
+      height: 280px;
+      overflow: hidden;
+      background-color: black;
+      margin-left: 10px;
+      margin-top: 10px;
+      
+      
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .movie-details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .movie-card:hover .movie-details {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .movie-details h2,
+    .movie-details p {
+      margin: 0;
+    }
+  </style>
+
+
+  
+
+
+
+{% endblock %}
